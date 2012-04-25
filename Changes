@@ -1,6 +1,43 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
-0.0.1 2012-01-12T14:08:13
+0.0.2 2012-04-25T21:49:11
  [Ioan Rogers <ioan.rogers@gmail.com>]
- - First Release
+ - Revert dist.ini
+
+ - Not being autocommitted
+
+ - Testing github::update
+
+
+ [Ioan Rogers <ioanr@cpan.org>]
+ - Require latest version of dzp::changelogfromgit to stop cpantester dep
+   failures
+
+ - v0.0.2
+
+ - v0.0.2
+
+ - Placeholder Changes to shut up dzp::git::commit
+
+
+v0.0.1 2012-01-12T14:07:56
+ [Ioan Rogers <ioan.rogers@gmail.com>]
+ - Initial ReadmeMarkdownFromPod file
+
+ - dzp::git doesn't use nextversion
+
+ - Using all dzp::git
+
+ - Allow dirty readme
+
+ - Allow dirty readme
+
+ - Commit any changes
+
+ - Ignore readme
+
+ - tidied, check email isn't in the author_name
+
+ - Initial commit
+
 

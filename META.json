@@ -1,10 +1,10 @@
 {
    "abstract" : "Format Changelogs using CPAN::Changes",
    "author" : [
-      "Ioan Rogers <ioan.rogers@gmail.com>"
+      "Ioan Rogers <ioanr@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300006, CPAN::Meta::Converter version 2.113640",
+   "generated_by" : "Dist::Zilla version 4.300015, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -26,19 +26,19 @@
       },
       "runtime" : {
          "requires" : {
-            "CPAN::Changes" : 0,
-            "CPAN::Changes::Release" : 0,
-            "Dist::Zilla::Plugin::ChangelogFromGit" : 0,
-            "Moose" : 0
+            "CPAN::Changes" : "0",
+            "CPAN::Changes::Release" : "0",
+            "Dist::Zilla::Plugin::ChangelogFromGit" : "0.004",
+            "Moose" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "File::Find" : 0,
-            "File::Temp" : 0,
-            "Test::More" : 0,
-            "strict" : 0,
-            "warnings" : 0
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0",
+            "strict" : "0",
+            "warnings" : "0"
          }
       }
    },
@@ -47,12 +47,13 @@
       "bugtracker" : {
          "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues"
       },
+      "homepage" : "http://metacpan.org/release/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/",
       "repository" : {
          "type" : "git",
          "url" : "git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git",
          "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
       }
    },
-   "version" : "0.0.1"
+   "version" : "0.0.2"
 }
 

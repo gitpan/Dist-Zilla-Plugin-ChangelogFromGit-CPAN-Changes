@@ -19,10 +19,10 @@ my %module_build_args = (
   },
   "dist_abstract" => "Format Changelogs using CPAN::Changes",
   "dist_author" => [
-    "Ioan Rogers <ioan.rogers\@gmail.com>"
+    "Ioan Rogers <ioanr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes",
-  "dist_version" => "0.0.1",
+  "dist_version" => "0.0.2",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes",
   "recommends" => {},
@@ -30,7 +30,7 @@ my %module_build_args = (
   "requires" => {
     "CPAN::Changes" => 0,
     "CPAN::Changes::Release" => 0,
-    "Dist::Zilla::Plugin::ChangelogFromGit" => 0,
+    "Dist::Zilla::Plugin::ChangelogFromGit" => "0.004",
     "Moose" => 0
   },
   "script_files" => []

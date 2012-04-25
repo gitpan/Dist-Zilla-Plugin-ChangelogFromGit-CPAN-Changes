@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 {
-    $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.1';
+    $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.2';
 }
 
 # ABSTRACT: Format Changelogs using CPAN::Changes
@@ -65,7 +65,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 =head1 VERSION
 
-version 0.0.1
+version 0.0.2
 
 =head1 SEE ALSO
 
@@ -73,10 +73,8 @@ L<Dist::Zilla::Plugin::ChangelogFromGit::Debian> which was used as a template fo
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues>.
+You can make new bug reports, and view existing ones, through the
+web interface at L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues>.
 
 =head1 SOURCE
 
@@ -85,7 +83,7 @@ and may be cloned from L<git://github.com/ioanrogers/Dist-Zilla-Plugin-Changelog
 
 =head1 AUTHOR
 
-Ioan Rogers <ioan.rogers@gmail.com>
+Ioan Rogers <ioanr@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 

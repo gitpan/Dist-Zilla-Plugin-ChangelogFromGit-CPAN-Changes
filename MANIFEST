@@ -3,7 +3,6 @@ Changes
 LICENSE
 MANIFEST
 META.json
-README.mkdn
 SIGNATURE
 dist.ini
 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
