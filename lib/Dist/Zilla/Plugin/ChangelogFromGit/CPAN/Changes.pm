@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 {
-  $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.3';
+  $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.4';
 }
 
 # ABSTRACT: Format Changelogs using CPAN::Changes
@@ -14,6 +14,8 @@ extends 'Dist::Zilla::Plugin::ChangelogFromGit';
 has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
 
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
+
+has show_author => ( is => 'ro', isa => 'Bool', default => 1);
 
 has _git_tag => (
     is      => 'ro',
@@ -51,20 +53,25 @@ sub render_changelog {
 
         foreach my $change ( @{ $release->changes } ) {
             next if $change->description =~ /^\s+$/; # does git allow empty messages?
-            
-            my $author = $change->author_name;
 
-            if ($self->show_author_email) {
-                $author .= ' <' . $change->author_email . '>';
-            }
             my $desc = $change->description;
             chomp $desc;
 
-            if ($self->group_by_author) {
-                my $group = $author;
-                $cpan_release->add_changes( { group => $group }, $desc );
+            if ($self->show_author) {            
+                my $author = $change->author_name;
+
+                if ($self->show_author_email) {
+                    $author .= ' <' . $change->author_email . '>';
+                }
+
+                if ($self->group_by_author) {
+                    my $group = $author;
+                    $cpan_release->add_changes( { group => $group }, $desc );
+                } else {
+                    $cpan_release->add_changes( $desc . " [$author]" );
+                }
             } else {
-                $cpan_release->add_changes( $desc . " [$author]" );
+                $cpan_release->add_changes( $desc );
             }
         }
 
@@ -88,7 +95,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 =head1 VERSION
 
-version 0.0.3
+version 0.0.4
 
 =head1 SYNOPSIS
 
@@ -109,6 +116,11 @@ message.
 
 Author email is probably just noise for most people, but turn this on if you
 want to show it [ Anne Author <anne@author.com> ]
+
+=head2 show_author
+
+Whether to show authors at all. Enabled by default. Turning this off also
+turns off grouping by author and author emails.
 
 =head1 SEE ALSO
 

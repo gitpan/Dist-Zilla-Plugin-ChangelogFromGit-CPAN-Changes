@@ -17,7 +17,7 @@ my %module_build_args = (
     "Ioan Rogers <ioanr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes",
-  "dist_version" => "0.0.3",
+  "dist_version" => "0.0.4",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes",
   "recommends" => {},
@@ -30,8 +30,8 @@ my %module_build_args = (
   },
   "script_files" => [],
   "test_requires" => {
-    "File::Find" => 0,
-    "File::Temp" => 0,
+    "IO::Handle" => 0,
+    "IPC::Open3" => 0,
     "Test::More" => 0,
     "strict" => 0,
     "warnings" => 0
