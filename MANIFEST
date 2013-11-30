@@ -5,6 +5,7 @@ MANIFEST
 META.json
 SIGNATURE
 dist.ini
+dzp-changes.sublime-workspace
 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
 t/00-compile.t
 weaver.ini

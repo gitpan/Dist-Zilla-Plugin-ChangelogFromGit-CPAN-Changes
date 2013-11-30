@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 {
-  $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.4';
+  $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.5';
 }
 
 # ABSTRACT: Format Changelogs using CPAN::Changes
@@ -16,6 +16,13 @@ has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
 has show_author => ( is => 'ro', isa => 'Bool', default => 1);
+
+
+has transform_version_tag => (
+    is      => 'ro',
+    isa     => 'Bool',
+    default => 0,
+);
 
 has _git_tag => (
     is      => 'ro',
@@ -33,6 +40,7 @@ sub render_changelog {
     my ($self) = @_;
 
     my $cpan_changes = CPAN::Changes->new( preamble => 'Changelog for ' . $self->zilla->name, );
+    my $tag_re = qr/$self->{tag_regexp}/;
 
     foreach my $release ( reverse $self->all_releases ) {
         next if $release->has_no_changes;    # no empties
@@ -46,6 +54,15 @@ sub render_changelog {
             }
         }
 
+        if ($self->transform_version_tag) {
+            $version =~ $tag_re;
+            if (!$1) {
+                die sprintf 'Failed to get a match from tag_regexp: [%s] vs [%s]',
+                $version, $tag_re;
+            }
+            $version = $1;
+        }
+
         my $cpan_release = CPAN::Changes::Release->new(
             version => $version,
             date    => $release->date,
@@ -57,7 +74,7 @@ sub render_changelog {
             my $desc = $change->description;
             chomp $desc;
 
-            if ($self->show_author) {            
+            if ($self->show_author) {
                 my $author = $change->author_name;
 
                 if ($self->show_author_email) {
@@ -95,14 +112,16 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 =head1 VERSION
 
-version 0.0.4
+version 0.0.5
 
 =head1 SYNOPSIS
 
  [ChangelogFromGit::CPAN::Changes]
  ; All options from [ChangelogFromGit] plus
- group_by_author = 1 ; default 0
- show_author_email = 1 ; default 0
+ group_by_author       = 1 ; default 0
+ show_author_email     = 1 ; default 0
+ show_author           = 0 ; default 1
+ transform_version_tag = 1 ; default 0
 
 =head1 ATTRIBUTES
 
@@ -121,6 +140,13 @@ want to show it [ Anne Author <anne@author.com> ]
 
 Whether to show authors at all. Enabled by default. Turning this off also
 turns off grouping by author and author emails.
+
+=head2 transform_version_tag
+
+Transform a git version tag to one compliant with L<CPAN::Changes::Spec> using
+C<tag_regexp>. Use this if your git tag doesn't follow the standard.
+
+Defaults to off.
 
 =head1 SEE ALSO
 

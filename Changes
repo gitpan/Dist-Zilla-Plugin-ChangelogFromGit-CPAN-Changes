@@ -1,6 +1,39 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
-v0.0.4 2013-09-06T08:39:08
+v0.0.5 2013-11-30T05:51:20
+ - Merge branch 'master' of
+   github.com:ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
+   [Ioan Rogers]
+ - Merge pull request #9 from chorny/master
+   
+   prevent hanging on Windows [Ioan Rogers]
+ - prevent hanging on Windows [Alexandr Ciornii]
+ - Remove cruft [Ioan Rogers]
+ - [Feature] Create CPAN::Changes compliant version numbers from
+   non-compliant
+   git tags. Closes #6
+   
+   Squashed commit of the following:
+   commit 1ebd18fd59033d5d8e56ca3f1eac2852c0227bd0
+   Author: Ioan Rogers <ioanr@cpan.org>
+   Date:   Thu Sep 19 14:09:41 2013 -0700
+   
+       [Closes #6] Renamed var, improved docs, added some error handling
+   
+   commit 1084f98fc2bf1390e18605b2b6bca32b03c37148
+   Author: Shantanu <shantanu@cpan.org>
+   Date:   Thu Sep 12 13:00:17 2013 +0700
+   
+       Not everyone uses CPAN::Changes::Spec compliant tags in git. So I
+   have
+       enabled users to choose weather to parse the version numbers from
+   tag if
+       their tag is not specc compliant
+   
+   Signed-off-by: Ioan Rogers <ioanr@cpan.org> [Shantanu Bhadoria]
+
+v0.0.4 2013-09-06T08:39:23
+ - Release 0.0.4 [Ioan Rogers]
  - * Make sure README is checked in
    * Use multiple_inheritance for Git::CommitBuild, otherwise the release
    history

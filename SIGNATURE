@@ -14,26 +14,27 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 2613285125e06c1d560aad190f452cea27f196cb Build.PL
-SHA1 d4d4d9b48af70f6fe322725f064378d83e063654 Changes
+SHA1 7bd921f3a1ef6a95896a42e666632183267ad9cb Build.PL
+SHA1 89e07ad7dc98035cf78ab889699bb380d1b67825 Changes
 SHA1 f06e0933973fda71c2510f563f0bcfae913d78c3 LICENSE
-SHA1 3fcd9b96a781c8491722d6d4048ae9cf2a3e6eee MANIFEST
-SHA1 297d7134f133d5c5b57abd4e69f0fc4da276a5fd META.json
-SHA1 92b5e706b81961c869f322eb9c75256ddd565625 dist.ini
-SHA1 8c953af5ea4f493792dfd7684be6cba01705b632 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
-SHA1 1625cdbb7fce8805d264c8f4156a096776a7717a t/00-compile.t
+SHA1 5aac18b594ccb2b1653cbf89a38f81ece3bb65ea MANIFEST
+SHA1 261916f58a139fda22bc9dac3dc5dc6aec990d24 META.json
+SHA1 38e06a9186ca4fabadfb662bd38df85fe4892b2a dist.ini
+SHA1 7e855836f2ac93770e2b359ca923eac7ede2f191 dzp-changes.sublime-workspace
+SHA1 01506889a76175acae2282e05252f7a083ecf5f1 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
+SHA1 c8130a92e226263365f39d414445e9d132cffe28 t/00-compile.t
 SHA1 5ed15a5a4566bbe19b445b3c969b26ab349510fc weaver.ini
 SHA1 35e02f5c803c52f4d16eca72a0f80b62c82166ea xt/author/critic.t
-SHA1 6f846f7ede312098a614207bcea6fdb2207b8030 xt/author/test-eol.t
+SHA1 8a649950be26c5ee378eec15b7347387b9586aef xt/author/test-eol.t
 SHA1 e3094e32340a9a0dcb90d91b77d66e61cbf7fa14 xt/perlcriticrc
 SHA1 ff40a14d2d4b2fb9b93bf1324632dc9b4efafacc xt/perltidyrc
 SHA1 199b3d456352d36185a3f28aaf40efb0475dacab xt/release/cpan-changes.t
 SHA1 cbc5b72710fb645c559b78c8ac8b879f62aff326 xt/release/dist-manifest.t
-SHA1 f4413a7fb8ddf56949b47d1238979d9d723c1a89 xt/release/kwalitee.t
+SHA1 4dfccbc7b2c2d7e612cb2405be5c9f462d471906 xt/release/kwalitee.t
 SHA1 7b52b909acf6cd52733f8f226f92147ed76a2717 xt/release/meta-json.t
 SHA1 bae663945a4380ca95a6ba5d8f5e42d2946e0629 xt/release/minimum-version.t
 SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
-SHA1 c769b078112da535475284c9fe0cf6b1c047dbdd xt/release/no-tabs.t
+SHA1 a762ac98db86ff06b01a3f2cccf3fd4bc9304142 xt/release/no-tabs.t
 SHA1 4c599e8a4ebb7a899f90ee3c235a64fdbc7e2c06 xt/release/pod-coverage.t
 SHA1 4146b75714ac972231d12d4fb93e764817a5eb0b xt/release/pod-linkcheck.t
 SHA1 fae7a9531fdd000d4075a378b828a7aa2508491d xt/release/pod-no404s.t
@@ -42,19 +43,19 @@ SHA1 29865e58a16b5465bb7efbd399ad16ba72f50695 xt/release/portability.t
 SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
 SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.14 (GNU/Linux)
+Version: GnuPG v1.4.15 (GNU/Linux)
 
-iQIcBAEBCgAGBQJSKZSuAAoJEOpmRc2kYGBPxZoP/AuLZCASn0F7pCI7tcNEHKsD
-aNK2kRJ9JkdLBV2Qq41AcZT5+2TMByGsawh3cLLN0b0akLpHgcskFtoKeDwW0Ob2
-RkdOsKiumI+Ub0CHrMcpuClcKNi35fvf7eVCQRWdONhXFfkVWjdwWlrSnJwrdCh8
-kpITWW/IrzHzS9+SIZda2S8iQwPZzGL0q699TwboHdJ9NNhmZnOurrqi8UCN76NE
-YnH/JncIWwt7x2wHZpUFCH4h1VnNvApqHTyvF0GBaa7fbj0MbOp3NriG/vsRqbw/
-evW8MRk5qLIwrhYbrJDNr0MLBSXUMY6eGlISYKuSHPME8JLr64xRluSGlxY6yprF
-E/nQFw5JdI/FWQRfSDBILYqheB0e4ADpL7K7f/80JIDo9S8p9WG4jDEMu3lzMvNw
-WdPkSacZ+G6XA3dm00IJKux/6NyETE0ca5XKF3fWNEaZV/RhfYm8o+o4+Wyu6vT8
-17ur7TlhqwycXARaLDboP9HPEf6ljoUeNAjau6V+d5qedg5ibJrv97khFCORHRoC
-19xDjBpe72UuESMiXo0AhgbAlMBFgjU29H/jhfumblFVRMjLONX3Ydpa/D3QNmO8
-cU1g8Acojj1yUMGKae8EOE+Lo9nHkPtdu1+3F32WmrHJF79La699d44ElBR71UIc
-tEX+1wMDHHg6auwhAV0L
-=LxN8
+iQIcBAEBCgAGBQJSmXzbAAoJEOpmRc2kYGBPNPUQAKWnTNIjfzQ1a8HEOwBwPS8m
+7iZGA5FUNsQKD2TiwXIkJW6ktCi3RauVhXLWTv5xzkhCTSXBfoBLHoIW12XbGtzO
+Gyt8tmFVCR20WUguwoHej4Infz25+tnQ2kWk1WRqyV5WtZuauvvddGoAa9F4ymz/
+I1JKSqKz2URp9MG1f/ohzW+jXN6h/YEUZtexuTjEJmH03iSvxhMenRCcdA2fbJP0
+calJ3Q9INCiCB9x1il7GpqThTve82jOrj57Ma/h/ID1Z1vO/EtDfVWWkyKBRmX9f
+FJnKxIa3m+2BmblzmAiX+gR63psVXBVeou4vN+hFEHDbSV/+sLjf4gxJsqXChcnT
+GIpkMoQA2LoXoTG7sO4s53yOIQCFHE0n/MDO7WGHLCwr2k9IvWiIMmP2pRccPcYs
+DjO9Pu828CU5j0HS8Ab8eScn5LszAsdYxtU/ffx/Y2nwmk3/DEZOCYD2Sj0v6Y3/
+a4PvWIarmsTQTcx7h7E2/gH4Uzc8CZDgtjkrZSW6yukCOcNgbsvrzpqqF/yVefbp
+E8gmM2m8bTR6G14Ws37UI31NID05b7cRWgUx9fPeqqkQrUVDn2f/UlRTEoYUqGxi
+9wLCBACrGThRjWZaptCgjopfBK1pMvag9COQLBUlwxg7TQCAuhFdvwrKFnhD57FC
+gbeZhjvSWMVX7krjdyU/
+=vGRg
 -----END PGP SIGNATURE-----
