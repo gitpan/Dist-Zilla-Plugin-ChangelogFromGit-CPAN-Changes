@@ -528,15 +528,6 @@
 			}
 		},
 		{
-			"file": "git_log.pl",
-			"settings":
-			{
-				"buffer_size": 2059,
-				"line_ending": "Unix",
-				"name": "#!/usr/bin/env perl"
-			}
-		},
-		{
 			"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
 			"settings":
 			{
@@ -788,6 +779,7 @@
 	},
 	"file_history":
 	[
+		"/home/ioan/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/git_log.pl",
 		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes/Types.pm",
 		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes-0.0.4/Changes",
 		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Constants.pm",
@@ -914,8 +906,7 @@
 		"/home/ioan/Dropbox/Projects/Wi-Free/website/utils/livechat_status_update.pl",
 		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/HTML.pm",
 		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Image.pm",
-		"/home/ioan/rand_country.pl",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Config.pm"
+		"/home/ioan/rand_country.pl"
 	],
 	"find":
 	{
@@ -1211,17 +1202,10 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"follow_symlinks": true,
-			"path": "/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
-		}
-	],
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1428,221 +1412,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "git_log.pl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2059,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								651,
-								651
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME",
-								"XXX"
-							],
-							"auto_name": "#!/usr/bin/env perl",
-							"codeintel": true,
-							"codeintel_config":
-							{
-								"JavaScript":
-								{
-									"codeintel_max_recursive_dir_depth": 2,
-									"codeintel_scan_files_in_project": false,
-									"javascriptExtraPaths":
-									[
-									]
-								},
-								"PHP":
-								{
-									"codeintel_max_recursive_dir_depth": 5,
-									"codeintel_scan_files_in_project": false,
-									"phpExtraPaths":
-									[
-									]
-								},
-								"Python":
-								{
-									"env":
-									{
-									}
-								}
-							},
-							"codeintel_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"HTML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"TemplateToolkit"
-							],
-							"codeintel_live": true,
-							"codeintel_live_enabled_languages":
-							[
-								"JavaScript",
-								"SCSS",
-								"HTML",
-								"Sass",
-								"HTML5",
-								"Perl",
-								"CSS",
-								"TemplateToolkit"
-							],
-							"codeintel_max_recursive_dir_depth": 10,
-							"codeintel_scan_exclude_dir":
-							{
-								"JavaScript":
-								[
-									"/build/",
-									"/min/"
-								]
-							},
-							"codeintel_scan_files_in_project": true,
-							"codeintel_selected_catalogs":
-							[
-								"HTML5",
-								"jQuery"
-							],
-							"codeintel_snippets": true,
-							"codeintel_syntax_map":
-							{
-								"Python Django": "Python"
-							},
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"bitwise": true,
-								"browser": true,
-								"camelcase": true,
-								"curly": true,
-								"eqeqeq": true,
-								"es3": true,
-								"globalstrict": true,
-								"indent": 4,
-								"latedef": true,
-								"quotmark": "single",
-								"strict": true,
-								"trailing": true,
-								"undef": true,
-								"unused": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublime_auto_complete": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-								"haskell",
-								"java",
-								"lua",
-								"php",
-								"python",
-								"Ruby",
-								"ruby-lint",
-								"pylint",
-								"xml",
-								"coffeescript",
-								"rubyhaml"
-							],
-							"sublimelinter_executable_map":
-							{
-								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "hard",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": true,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": true,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Perl/Perl.tmLanguage"
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
 					"semi_transient": false,
 					"settings":
@@ -1780,7 +1556,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "dist.ini",
 					"semi_transient": false,
 					"settings":
@@ -2020,7 +1796,7 @@
 		]
 	},
 	"menu_visible": true,
-	"project": "",
+	"project": "dzp-changes.sublime-project",
 	"replace":
 	{
 		"height": 68.0
@@ -2061,7 +1837,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 241.0,
+	"side_bar_width": 415.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

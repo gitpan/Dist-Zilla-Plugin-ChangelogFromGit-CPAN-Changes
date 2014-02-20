@@ -14,18 +14,22 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 7bd921f3a1ef6a95896a42e666632183267ad9cb Build.PL
-SHA1 89e07ad7dc98035cf78ab889699bb380d1b67825 Changes
-SHA1 f06e0933973fda71c2510f563f0bcfae913d78c3 LICENSE
-SHA1 5aac18b594ccb2b1653cbf89a38f81ece3bb65ea MANIFEST
-SHA1 261916f58a139fda22bc9dac3dc5dc6aec990d24 META.json
-SHA1 38e06a9186ca4fabadfb662bd38df85fe4892b2a dist.ini
-SHA1 7e855836f2ac93770e2b359ca923eac7ede2f191 dzp-changes.sublime-workspace
-SHA1 01506889a76175acae2282e05252f7a083ecf5f1 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
-SHA1 c8130a92e226263365f39d414445e9d132cffe28 t/00-compile.t
+SHA1 b524dbab0eb5c25ec0b0e614496de5b27b324902 Build.PL
+SHA1 9704d9e507827b7da0250165697f9c47a4d0d1ef Changes
+SHA1 55166ea799ddbad5d173447469c1dc2268e14974 LICENSE
+SHA1 f182db91d9606460c45d917cc0a328b8c1e4a50f MANIFEST
+SHA1 c0cd72d73942aaca3f7daaf220ee62ec2f537242 META.json
+SHA1 3e14e86ceb000af0809dca6fc111ae88f9627b56 dist.ini
+SHA1 da3b60d20e739a7bb6583392bb15ffc35e68dda2 dzp-changes.sublime-project
+SHA1 cb7d2d482aaa36557400905c500a39aea2ea276e dzp-changes.sublime-workspace
+SHA1 89c0495dd4417736adf48a84b94d03a54d0e4901 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
+SHA1 e3094e32340a9a0dcb90d91b77d66e61cbf7fa14 perlcriticrc
+SHA1 6abd769663de4f8fc69909e1b63f64ffea88a9a0 perltidyrc
+SHA1 42577437ef18bdc711d235b081a340d6060cd39d t/00-compile.t
+SHA1 10c5a3591188c086df31f9ef04f64d894acdd164 tidyall.ini
 SHA1 5ed15a5a4566bbe19b445b3c969b26ab349510fc weaver.ini
 SHA1 35e02f5c803c52f4d16eca72a0f80b62c82166ea xt/author/critic.t
-SHA1 8a649950be26c5ee378eec15b7347387b9586aef xt/author/test-eol.t
+SHA1 c56cb3bc847e512dcec236c309f4e0b6455c3dc0 xt/author/test-eol.t
 SHA1 e3094e32340a9a0dcb90d91b77d66e61cbf7fa14 xt/perlcriticrc
 SHA1 ff40a14d2d4b2fb9b93bf1324632dc9b4efafacc xt/perltidyrc
 SHA1 199b3d456352d36185a3f28aaf40efb0475dacab xt/release/cpan-changes.t
@@ -34,28 +38,28 @@ SHA1 4dfccbc7b2c2d7e612cb2405be5c9f462d471906 xt/release/kwalitee.t
 SHA1 7b52b909acf6cd52733f8f226f92147ed76a2717 xt/release/meta-json.t
 SHA1 bae663945a4380ca95a6ba5d8f5e42d2946e0629 xt/release/minimum-version.t
 SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
-SHA1 a762ac98db86ff06b01a3f2cccf3fd4bc9304142 xt/release/no-tabs.t
-SHA1 4c599e8a4ebb7a899f90ee3c235a64fdbc7e2c06 xt/release/pod-coverage.t
+SHA1 e771ac9cc0fc65b4af70e9f7ab128e6b69dd1b04 xt/release/no-tabs.t
+SHA1 a6d8370909ec0e0755d4bd691eb81d722cf94430 xt/release/pod-coverage.t
 SHA1 4146b75714ac972231d12d4fb93e764817a5eb0b xt/release/pod-linkcheck.t
 SHA1 fae7a9531fdd000d4075a378b828a7aa2508491d xt/release/pod-no404s.t
-SHA1 9934d36e45e1143c1a54658bc48872e0591af41b xt/release/pod-syntax.t
+SHA1 296928dbbcaffd1514ccc9b77a1e6e03cfe9b068 xt/release/pod-syntax.t
 SHA1 29865e58a16b5465bb7efbd399ad16ba72f50695 xt/release/portability.t
 SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
 SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.15 (GNU/Linux)
+Version: GnuPG v1
 
-iQIcBAEBCgAGBQJSmXzbAAoJEOpmRc2kYGBPNPUQAKWnTNIjfzQ1a8HEOwBwPS8m
-7iZGA5FUNsQKD2TiwXIkJW6ktCi3RauVhXLWTv5xzkhCTSXBfoBLHoIW12XbGtzO
-Gyt8tmFVCR20WUguwoHej4Infz25+tnQ2kWk1WRqyV5WtZuauvvddGoAa9F4ymz/
-I1JKSqKz2URp9MG1f/ohzW+jXN6h/YEUZtexuTjEJmH03iSvxhMenRCcdA2fbJP0
-calJ3Q9INCiCB9x1il7GpqThTve82jOrj57Ma/h/ID1Z1vO/EtDfVWWkyKBRmX9f
-FJnKxIa3m+2BmblzmAiX+gR63psVXBVeou4vN+hFEHDbSV/+sLjf4gxJsqXChcnT
-GIpkMoQA2LoXoTG7sO4s53yOIQCFHE0n/MDO7WGHLCwr2k9IvWiIMmP2pRccPcYs
-DjO9Pu828CU5j0HS8Ab8eScn5LszAsdYxtU/ffx/Y2nwmk3/DEZOCYD2Sj0v6Y3/
-a4PvWIarmsTQTcx7h7E2/gH4Uzc8CZDgtjkrZSW6yukCOcNgbsvrzpqqF/yVefbp
-E8gmM2m8bTR6G14Ws37UI31NID05b7cRWgUx9fPeqqkQrUVDn2f/UlRTEoYUqGxi
-9wLCBACrGThRjWZaptCgjopfBK1pMvag9COQLBUlwxg7TQCAuhFdvwrKFnhD57FC
-gbeZhjvSWMVX7krjdyU/
-=vGRg
+iQIcBAEBCgAGBQJTBW2LAAoJELCDA8+ONCk7YRgQALGS5qOgdtdXNgF8HRq9MYb0
+aWMER2bvimYsizFjfbGa/m8IaTYtBQoVyu/GTXQBX11ZvV2X7xYDnzlBZOaX66fg
+7kl/HrZ4ssNaAiUR5u6j7ZTGHT0/Ol6ni62l4gagkGOIu834w9rn+qKtdvp65BSL
+0YNlsKAqSdQ3pN/uvfiBq4i4zXQc5v68JCNNlFg5DBayQGLk3XFi+E8BWumZrATU
+9cqzYWiOk8MbHhihFTcdg6lwyiH2JFA9py2TzkPkxnbeWKGgOWWUFQf078RMlwYY
+3aM/5HutppVWEPluiJ4KmeWMAjq4aXbGhTQwpHUGk0lzbRcI7shi713u+AGV1D38
+i16Mo5O/pSBfGDAkmCf+p9qI7Cg2UTxONVGK7XQHP4TTVFrRaVUhS91w48lnxOxi
+HHEFZ6e+gA6orJ5xy0JRt5b8rDwSBZMqjZmkT+H8VQFJEvn+cdSmNTjwdm5SRMPS
+vzMMQpypcf8R8J6TmQH0dsM6ZK36fQLwrKvcdaHDFbvHHYpL5CjpgILDBdyC3gbD
+0+B+ImpobE3owGISnCqsXYfIW6RnJv5gdk1PBxEDBZWRJzmcK8MKocNB0jo9Cvmt
+PI+EdzE6jFzeSggEDXLPMTsPmx3Tc2xbOHA4leMZt1WDGqRzn2GKSpfNz5B7+Y7w
+dmRDchLDYOXRI9tPXqWu
+=FtiX
 -----END PGP SIGNATURE-----
