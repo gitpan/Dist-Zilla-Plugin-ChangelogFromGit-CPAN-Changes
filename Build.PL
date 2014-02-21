@@ -18,17 +18,18 @@ my %module_build_args = (
     "Ioan Rogers <ioanr\@cpan.org>"
   ],
   "dist_name" => "Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes",
-  "dist_version" => "0.0.7",
+  "dist_version" => "0.0.8",
   "license" => "perl",
   "module_name" => "Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes",
-  "recommends" => {},
+  "recommends" => {
+    "Proc::InvokeEditor" => 0
+  },
   "recursive_test_files" => 1,
   "requires" => {
     "CPAN::Changes" => 0,
     "CPAN::Changes::Release" => 0,
     "Class::Load" => 0,
     "DateTime" => 0,
-    "Dist::Zilla::Plugin::ChangelogFromGit" => "0.004",
     "Dist::Zilla::Role::AfterBuild" => 0,
     "Dist::Zilla::Role::FileGatherer" => 0,
     "Dist::Zilla::Role::Git::Repo" => 0,

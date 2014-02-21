@@ -36,12 +36,14 @@
          }
       },
       "runtime" : {
+         "recommends" : {
+            "Proc::InvokeEditor" : "0"
+         },
          "requires" : {
             "CPAN::Changes" : "0",
             "CPAN::Changes::Release" : "0",
             "Class::Load" : "0",
             "DateTime" : "0",
-            "Dist::Zilla::Plugin::ChangelogFromGit" : "0.004",
             "Dist::Zilla::Role::AfterBuild" : "0",
             "Dist::Zilla::Role::FileGatherer" : "0",
             "Dist::Zilla::Role::Git::Repo" : "0",
@@ -74,6 +76,6 @@
          "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
       }
    },
-   "version" : "0.0.7"
+   "version" : "0.0.8"
 }
 
