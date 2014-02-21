@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"tag",
+				"tag_regexp"
+			],
+			[
+				"pa",
+				"parse"
+			],
+			[
+				"rele",
+				"release_version"
+			],
+			[
+				"copy_",
+				"copy_to_root"
+			],
+			[
+				"exit",
+				"exists"
+			],
+			[
+				"build",
+				"build_file"
+			],
+			[
+				"buil",
+				"build_file"
+			],
+			[
+				"ed",
+				"edit_changelog"
+			],
+			[
+				"edit",
+				"InvokeEditor"
+			],
+			[
+				"In",
+				"InvokeEditor"
+			],
+			[
+				"_git",
+				"_git_tag"
+			],
+			[
+				"log",
+				"log_debug"
+			],
+			[
 				"sor",
 				"sorted_commits"
 			],
@@ -18,10 +66,6 @@
 			[
 				"format",
 				"format_str"
-			],
-			[
-				"log",
-				"log_format"
 			],
 			[
 				"for",
@@ -86,10 +130,6 @@
 			[
 				"code",
 				"code_generator"
-			],
-			[
-				"pa",
-				"package"
 			],
 			[
 				"su",
@@ -474,46 +514,6 @@
 			[
 				"inc",
 				"include_dir"
-			],
-			[
-				"w",
-				"wfcfg"
-			],
-			[
-				"cou",
-				"country_code"
-			],
-			[
-				"file",
-				"filename"
-			],
-			[
-				"htt",
-				"https_base_url"
-			],
-			[
-				"ut",
-				"utf8_str"
-			],
-			[
-				"tes",
-				"test_dir"
-			],
-			[
-				"tmp",
-				"tmp_dir"
-			],
-			[
-				"tmp_",
-				"tmp_file"
-			],
-			[
-				"t",
-				"tmp_dir"
-			],
-			[
-				"s",
-				"src_dir"
 			]
 		]
 	},
@@ -523,15 +523,7 @@
 			"file": "lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm",
 			"settings":
 			{
-				"buffer_size": 11213,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
-			"settings":
-			{
-				"buffer_size": 24194,
+				"buffer_size": 10513,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +531,7 @@
 			"file": "dist.ini",
 			"settings":
 			{
-				"buffer_size": 1093,
+				"buffer_size": 1058,
 				"line_ending": "Unix"
 			}
 		}
@@ -547,9 +539,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 400.0,
 		"selected_items":
 		[
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"sni",
+				"Snippet: PerlScript"
+			],
+			[
+				"perl",
+				"Snippet: PerlScript"
+			],
 			[
 				"ng",
 				"Set Syntax: nginx"
@@ -561,10 +565,6 @@
 			[
 				"ins",
 				"Package Control: Install Package"
-			],
-			[
-				"lo",
-				"Convert Case: Lower Case"
 			],
 			[
 				"ti",
@@ -609,10 +609,6 @@
 			[
 				"low	",
 				"Convert Case: Lower Case"
-			],
-			[
-				"perl",
-				"PerlTidy: Tidy"
 			],
 			[
 				"cta",
@@ -759,7 +755,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 392.0
+		"width": 655.0
 	},
 	"console":
 	{
@@ -779,6 +775,11 @@
 	},
 	"file_history":
 	[
+		"/home/ioan/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/test.pl",
+		"/home/ioan/out",
+		"/home/ioan/perl5/perlbrew/perls/perl-5.18.2/lib/site_perl/5.18.2/Git/Wrapper.pm",
+		"/home/ioan/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/log.pl",
+		"/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
 		"/home/ioan/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/git_log.pl",
 		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes/Types.pm",
 		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes-0.0.4/Changes",
@@ -901,16 +902,11 @@
 		"/home/ioan/Dropbox/bench_str_cmp.pl",
 		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_area_reseller_promo.tt",
 		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/WiFreeConfig.pm",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/PressReleases.pm",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_common_footer.tt",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/utils/livechat_status_update.pl",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/HTML.pm",
-		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Image.pm",
-		"/home/ioan/rand_country.pl"
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/PressReleases.pm"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -932,6 +928,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Data",
+			"tag_reg",
+			"last_release",
+			"head",
+			"_git_tag",
+			"git_tag",
+			"git_log_format",
+			"trans",
+			"data::pr",
+			"RUN",
+			"git::wr",
+			"tag_rege",
+			"excl",
+			"say",
+			"self->_changes",
+			"cpan_release",
+			"group",
 			"debug",
 			"sd_journal_sendv",
 			"journal_fd",
@@ -1042,24 +1055,7 @@
 			"prox",
 			"LIVECHAT_O",
 			"conf",
-			"db",
-			"livecha",
-			"base",
-			"'(\\w\\w)' =>",
-			"'",
-			"\"",
-			"DEFAULT_P",
-			"url",
-			"actionph",
-			"abs",
-			"croak",
-			"debug",
-			" '",
-			"abs_dir",
-			"my",
-			"enable_debug",
-			"Config",
-			"log"
+			"db"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1067,6 +1063,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"release",
+			"self->_changes",
 			"$self->request",
 			"download",
 			"captcha",
@@ -1192,9 +1190,7 @@
 			"{{$self->holder}}",
 			"_abs_file",
 			"_abs_dir",
-			"",
-			"=",
-			"noxml"
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1214,15 +1210,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11213,
+						"buffer_size": 10513,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								325,
-								325
+								4491,
+								4491
 							]
 						],
 						"settings":
@@ -1412,164 +1408,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3437.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 24194,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								533,
-								533
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME",
-								"XXX"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"bitwise": true,
-								"browser": true,
-								"camelcase": true,
-								"curly": true,
-								"eqeqeq": true,
-								"es3": true,
-								"globalstrict": true,
-								"indent": 4,
-								"latedef": true,
-								"quotmark": "single",
-								"strict": true,
-								"trailing": true,
-								"undef": true,
-								"unused": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-								"haskell",
-								"java",
-								"lua",
-								"php",
-								"python",
-								"Ruby",
-								"ruby-lint",
-								"pylint",
-								"xml",
-								"coffeescript",
-								"rubyhaml"
-							],
-							"sublimelinter_executable_map":
-							{
-								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "hard",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": true,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": true,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Perl/Perl.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 9513.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "dist.ini",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1093,
+						"buffer_size": 1058,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								600,
-								600
+								1058,
+								1058
 							]
 						],
 						"settings":
@@ -1757,9 +1616,10 @@
 							"syntax": "Packages/INI/INI.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 378.0,
+						"translation.y": 846.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1796,10 +1656,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
 	"project": "dzp-changes.sublime-project",
 	"replace":
 	{
-		"height": 68.0
+		"height": 78.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1837,7 +1701,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 415.0,
+	"side_bar_width": 159.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

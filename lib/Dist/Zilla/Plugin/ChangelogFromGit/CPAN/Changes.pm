@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.8';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.9';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.2;
@@ -180,7 +180,7 @@ sub _git_log {
 
     # commit has to come first
     my $format_str = 'commit:%H%n';
-    while (my ($attr, $esc) = each $format) {
+    while (my ($attr, $esc) = each %$format) {
         $format_str .= "$attr:$esc%n";
     }
     $format_str .= '<END COMMIT>%n';
@@ -225,7 +225,7 @@ sub _git_log {
             }];
     }
 
-    return [sort { $b->{date} <=> $a->{date} } values $commits];
+    return [sort { $b->{date} <=> $a->{date} } values %$commits];
 }
 
 sub _get_release_date {
@@ -339,7 +339,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.8
+version 0.0.9
 
 =head1 SYNOPSIS
 
