@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.9';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.10';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.2;
@@ -300,7 +300,7 @@ sub _get_changes {
             next if $commit->{subject} =~ /^Release /;
             next if $commit->{subject} =~ /^Merge (pull|branch)/;
 
-            if ($self->show_author) {
+            if ($self->show_author && exists $commit->{author}) {
                 my $author = $commit->{author};
 
                 if ($self->show_author_email) {
@@ -312,7 +312,7 @@ sub _get_changes {
                     $release->add_changes({group => $group},
                         $commit->{subject});
                 } else {
-                    $release->add_changes($commit->{subject} . " [$author]");
+                    $release->add_changes($commit->{subject} . " ($author)");
                 }
             } else {
                 $release->add_changes($commit->{subject});
@@ -339,7 +339,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.9
+version 0.0.10
 
 =head1 SYNOPSIS
 
