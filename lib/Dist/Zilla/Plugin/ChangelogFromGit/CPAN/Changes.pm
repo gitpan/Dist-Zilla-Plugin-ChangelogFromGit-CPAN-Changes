@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.10';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.11';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.2;
@@ -66,6 +66,15 @@ has _git => (
     default => sub { Git::Wrapper->new('.') },
 );
 
+has _git_can_mailmap => (
+    is      => 'ro',
+    lazy    => 1,
+    isa     => 'Bool',
+    default => sub {
+        return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
+    },
+);
+
 sub _build__changes {
     my $self = shift;
 
@@ -101,7 +110,7 @@ sub _build__last_release {
         }
         $last_release =~ $self->tag_regexp;
         if (!defined $1) {
-            $self->logger->log_croak(
+            $self->logger->log_fatal(
                 "Last release $last_release does not match tag_regexp");
         }
         return version->parse($1);
@@ -158,6 +167,8 @@ sub after_build {
 
 sub _get_tags {
     my $self = shift;
+    $self->logger->log_debug(
+        'Searching for tags matching ' . $self->tag_regexp);
     foreach my $tag ($self->_git->RUN('tag')) {
         next unless $tag =~ $self->tag_regexp;
         push @{$self->_tags}, $tag;
@@ -185,12 +196,18 @@ sub _git_log {
     }
     $format_str .= '<END COMMIT>%n';
 
+    my $log_opts = {
+        no_color => 1,
+        format   => $format_str,
+    };
+
+    if ($self->_git_can_mailmap and $self->show_author) {
+        $self->logger->log_debug('Using git mailmap');
+        $log_opts->{'use-mailmap'} = 1;
+    }
+
     my @out = $self->_git->RUN(
-        log => {
-            no_color      => 1,
-            'use-mailmap' => 1,
-            format        => $format_str,
-        },
+        log => $log_opts,
         $revs
     );
 
@@ -333,13 +350,18 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
+=for :stopwords Ioan Rogers Alexandr Ciornii <alexchorny@gmail.com> Jakob Voss
+<jakob@nichtich.de> Shantanu Bhadoria <shantanu@cpan.org>
+
 =head1 NAME
 
 Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Changes Changelogs from git
 
 =head1 VERSION
 
-version 0.0.10
+version 0.0.11
 
 =head1 SYNOPSIS
 
@@ -413,6 +435,14 @@ Defaults to false.
 You can make new bug reports, and view existing ones, through the
 web interface at L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues>.
 
+=head1 AVAILABILITY
+
+The project homepage is L<http://metacpan.org/release/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/>.
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see L<https://metacpan.org/module/Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes/>.
+
 =head1 SOURCE
 
 The development version is on github at L<http://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes>
@@ -428,5 +458,28 @@ This software is copyright (c) 2014 by Ioan Rogers.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+=head1 DISCLAIMER OF WARRANTY
+
+BECAUSE THIS SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT
+WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER
+PARTIES PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR, OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE SOFTWARE AS PERMITTED BY THE ABOVE LICENCE, BE LIABLE
+TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL, OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE SOFTWARE TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
 
 =cut
