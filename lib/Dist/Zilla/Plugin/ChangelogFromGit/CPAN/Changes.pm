@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.11';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.12';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.2;
@@ -35,7 +35,7 @@ has tag_regexp => (
     is      => 'ro',
     isa     => 'CoercedRegexpRef',
     coerce  => 1,
-    default => sub {'qr/^(\d+\.\d+)$/'},
+    default => 'v?(\d+\.\d+)',
 );
 
 
@@ -74,6 +74,20 @@ has _git_can_mailmap => (
         return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
     },
 );
+
+sub BUILDARGS {
+    my %args = %{$_[1]};
+
+    if (exists $args{tag_regexp}) {
+        if ($args{tag_regexp} eq 'semantic') {
+            $args{tag_regexp} = 'v?(\d+\.\d+\.\d+)';
+        } elsif ($args{tag_regexp} eq 'decimal') {
+            $args{tag_regexp} = 'v?(\d+\.\d+)$';
+        }
+    }
+
+    return \%args;
+}
 
 sub _build__changes {
     my $self = shift;
@@ -361,7 +375,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.11
+version 0.0.12
 
 =head1 SYNOPSIS
 
@@ -402,7 +416,10 @@ A regexp string which will be used to match git tags to find releases. If your
 release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
 capture group. It will be used as the version in place of the full tag name.
 
-Defaults to '^\d+\.\d+$'
+Also takes C<semantic>, which becomes C<qr{^v?(\d+\.\d+\.\d+)$}>, and
+C<decimal>, which becomes C<qr{^v?(\d+\.\d+)$}>.
+
+Defaults to 'decimal'
 
 =head2 C<file_name>
 

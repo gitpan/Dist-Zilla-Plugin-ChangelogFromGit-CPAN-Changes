@@ -50,6 +50,7 @@ my $static_prereqs = do { my $x = {
                       },
        'develop' => {
                       'requires' => {
+                                      'Dist::Zilla::PluginBundle::Author::IOANR' => '0.004',
                                       'Test::CPAN::Changes' => '0.19',
                                       'Test::More' => '0',
                                       'Test::NoTabs' => '0',
@@ -59,7 +60,20 @@ my $static_prereqs = do { my $x = {
        'runtime' => {
                       'recommends' => {
                                         'Proc::InvokeEditor' => '0'
-                                      }
+                                      },
+                      'requires' => {
+                                      'CPAN::Changes' => '0',
+                                      'CPAN::Changes::Release' => '0',
+                                      'Class::Load' => '0',
+                                      'DateTime' => '0',
+                                      'Dist::Zilla::Role::AfterBuild' => '0',
+                                      'Dist::Zilla::Role::FileGatherer' => '0',
+                                      'Dist::Zilla::Role::Git::Repo' => '0',
+                                      'Git::Wrapper' => '0',
+                                      'Moose' => '0',
+                                      'Moose::Util::TypeConstraints' => '0',
+                                      'perl' => 'v5.10.2'
+                                    }
                     },
        'test' => {
                    'recommends' => {
@@ -67,11 +81,23 @@ my $static_prereqs = do { my $x = {
                                      'CPAN::Meta::Requirements' => '2.120900'
                                    },
                    'requires' => {
+                                   'Archive::Tar' => '0',
+                                   'Dist::Zilla::File::InMemory' => '0',
+                                   'ExtUtils::MakeMaker' => '0',
                                    'File::Spec' => '0',
+                                   'File::Spec::Functions' => '0',
+                                   'File::chdir' => '0',
                                    'IO::Handle' => '0',
                                    'IPC::Open3' => '0',
+                                   'List::Util' => '0',
+                                   'Test::CPAN::Changes' => '0',
                                    'Test::CheckDeps' => '0.010',
-                                   'Test::More' => '0.94'
+                                   'Test::DZil' => '0',
+                                   'Test::More' => '0.94',
+                                   'Test::Roo' => '0',
+                                   'strict' => '0',
+                                   'version' => '0',
+                                   'warnings' => '0'
                                  }
                  }
      };
