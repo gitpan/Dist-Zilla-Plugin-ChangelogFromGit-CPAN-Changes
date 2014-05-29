@@ -1,8 +1,8 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.12';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.13';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
-use v5.10.2;
+use v5.10.1;
 use Moose;
 use Moose::Util::TypeConstraints;
 use Class::Load 'try_load_class';
@@ -366,8 +366,7 @@ __END__
 
 =encoding UTF-8
 
-=for :stopwords Ioan Rogers Alexandr Ciornii <alexchorny@gmail.com> Jakob Voss
-<jakob@nichtich.de> Shantanu Bhadoria <shantanu@cpan.org>
+=for :stopwords Ioan Rogers Alexandr Bhadoria Ciornii Jakob Shantanu Voss
 
 =head1 NAME
 
@@ -375,7 +374,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.12
+version 0.0.13
 
 =head1 SYNOPSIS
 

@@ -45,15 +45,13 @@ my %exclude = map {; $_ => 1 } qw(
 my $static_prereqs = do { my $x = {
        'configure' => {
                         'requires' => {
-                                        'Module::Build::Tiny' => '0.035'
+                                        'Module::Build::Tiny' => '0.036'
                                       }
                       },
        'develop' => {
                       'requires' => {
                                       'Dist::Zilla::PluginBundle::Author::IOANR' => '0.004',
                                       'Test::CPAN::Changes' => '0.19',
-                                      'Test::More' => '0',
-                                      'Test::NoTabs' => '0',
                                       'Test::Pod' => '1.41'
                                     }
                     },
@@ -72,7 +70,7 @@ my $static_prereqs = do { my $x = {
                                       'Git::Wrapper' => '0',
                                       'Moose' => '0',
                                       'Moose::Util::TypeConstraints' => '0',
-                                      'perl' => 'v5.10.2'
+                                      'perl' => 'v5.10.1'
                                     }
                     },
        'test' => {

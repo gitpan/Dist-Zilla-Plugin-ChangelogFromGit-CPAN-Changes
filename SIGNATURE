@@ -14,19 +14,19 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-SHA1 91a8fdd490fc8f9612c8645b1abb50b6bf8e3ebc Build.PL
-SHA1 d73459135d5878c4c2f86d71c4a9a7ac2fd46367 CONTRIBUTORS
-SHA1 157bb490aee55914fcc9437c4af04accbb79882d Changes
+SHA1 320e33c8b46b439da216605a2bbb4f9a185f9479 Build.PL
+SHA1 ff30f9b2213232a2be73899c2f67a9d5f83782d1 CONTRIBUTORS
+SHA1 ee2a025efba1d6f0ffecba912b1a558a81f97f9a Changes
 SHA1 631c3d34f02f71dad6d7565ff0e2c1db815c9d8d LICENSE
-SHA1 cd89312cb17032e67f38dcc54f200934cf410bad MANIFEST
-SHA1 a999878c7a9c36189ddc5a67c26c9545bf1d99aa META.json
-SHA1 3a3df5f161fcfd5c6ea1ba4df659f7bf9fe5ccbc dist.ini
-SHA1 310212f3ac7d20b77d3890e79aca0d979e50a9e4 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
+SHA1 85ca2c48f2d8b1be4e168675453b8a03048690d8 MANIFEST
+SHA1 5ac0a493aadc443c448f1f990e7e4a97af4c0d21 META.json
+SHA1 3c0ac14b6d143642b6ffd1873f86beb202a70c20 dist.ini
+SHA1 09dc86abadf662b105ed803458c45c73e962a836 lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm
 SHA1 e3094e32340a9a0dcb90d91b77d66e61cbf7fa14 perlcriticrc
 SHA1 6abd769663de4f8fc69909e1b63f64ffea88a9a0 perltidyrc
 SHA1 985d9ded8d8ed7e344a09e52b1402e878e91da28 t/00-check-deps.t
-SHA1 42577437ef18bdc711d235b081a340d6060cd39d t/00-compile.t
-SHA1 6e9f3e20baab1a3ee2c6cd61f13b562d09f60b34 t/00-report-prereqs.t
+SHA1 49bd1259d2ccd40012cd2a3ac60d0239968f1b30 t/00-compile.t
+SHA1 d32021643a09748dd41b13c086815eb45f5f06c1 t/00-report-prereqs.t
 SHA1 a22d09c44e57133bdc52b24ba2e1999718863d9c t/changes.t
 SHA1 3667633c69badde1fe85a9a883991d8df324aa50 t/changes/v1_defaults
 SHA1 65c39bb1ca962e334a8af1a1b898837f477ee11f t/changes/v1_email
@@ -36,32 +36,31 @@ SHA1 a9db804cf613c395fe4f02df60665a83847ae4f8 t/changes/v1_no_author
 SHA1 67c76af1752b97bd61e1638e8fa7a9be719fd399 t/test_repo.tar.gz
 SHA1 10c5a3591188c086df31f9ef04f64d894acdd164 tidyall.ini
 SHA1 5ed15a5a4566bbe19b445b3c969b26ab349510fc weaver.ini
-SHA1 c56cb3bc847e512dcec236c309f4e0b6455c3dc0 xt/author/test-eol.t
+SHA1 f242e380d897f0430a668ea3f2938df75c0bef55 xt/author/test-eol.t
 SHA1 e3094e32340a9a0dcb90d91b77d66e61cbf7fa14 xt/perlcriticrc
 SHA1 ff40a14d2d4b2fb9b93bf1324632dc9b4efafacc xt/perltidyrc
 SHA1 199b3d456352d36185a3f28aaf40efb0475dacab xt/release/cpan-changes.t
 SHA1 7b52b909acf6cd52733f8f226f92147ed76a2717 xt/release/meta-json.t
 SHA1 bae663945a4380ca95a6ba5d8f5e42d2946e0629 xt/release/minimum-version.t
 SHA1 c6c3c9f7fe12058b4771449dff874b1c450c982c xt/release/mojibake.t
-SHA1 e771ac9cc0fc65b4af70e9f7ab128e6b69dd1b04 xt/release/no-tabs.t
 SHA1 4146b75714ac972231d12d4fb93e764817a5eb0b xt/release/pod-linkcheck.t
 SHA1 296928dbbcaffd1514ccc9b77a1e6e03cfe9b068 xt/release/pod-syntax.t
 SHA1 bbcd59d081d9940af5d43337ae85458075933829 xt/release/test-version.t
-SHA1 ec3f84bfd7a9ce3246e7592f4134100c6b5ce02b xt/release/unused-vars.t
+SHA1 d1fe7d94b3edc7847eb187d4ee41f66e19cf8907 xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
+Version: GnuPG v2.0.22 (GNU/Linux)
 
-iQIcBAEBCgAGBQJTFHURAAoJEOpmRc2kYGBPhDAP/3+NTaRFBNsb1z+gDKTThixL
-MKtwQJS3S+HKL1Q/RTcLNMNKUp2wnOZKzL998vZLr4tKxZLbtKnv+NpD8l5Y0tRm
-KicGhbS35RHmt46Kw7tAXuzYc53Au59mxgnS02+lATXkMgwghydP8Aagbbi7hDe5
-FRNqTKzweQPgg+UZGZ4XpHcqWxh1+N0SaY15qLBYSgNTTuScenwGY7RQ5BSyb075
-ZGxIYtZSuUXAwGp6spTJFKLxI4j/q/4kiwBUz85ZH2b+hhZIGxsDRINtQ6g6CY6c
-fdA6Q8LKVQ7psgQi5V0xjMKVs8CO28o0FjipqHt2jZhcJ8evEf+K8NxuiDywjzUY
-PpktfHOQBT6010jumS1NlAVKtbQYTnqAQ2Tdw+4tBeHv7ohdH0YgbU1C5SeTWUpg
-Mli8XX4piKzB19ZVw1i120yyTgoV8DqWzKBOcmagIFXBxmjLMQifVj0L8XgZ34qg
-O1Fp81Iw7LDAsXpRB7Zfb4zU4nM0W2ZGYsrOhchvp7aJFirkUp7DTx/m1QRJoorr
-NeXBHMhdkG6R6eo34ql2gAesMaa/xN4eDEAhFui/xqahMxBqgA3wNn16a77AOxfE
-lxRebHR46Et8uGmafjeW0OVDztBYh3Sq9vQJVZLtvmzoJYcuqqIgSU1NNbo2YDv6
-wY0bYVygvmS6rjW5JIvI
-=7IzT
+iQIcBAEBCgAGBQJThq1fAAoJELCDA8+ONCk7tuMP/0iLD86OkbcudVBNjsbqiCjC
+T2bMr69uj7+hSKaMXjA80PPtZF0uslXIvpHZHt/yRY4R6yJEMQFMRN/QTCSozof+
+oIZ1icBq5ShPqWrIGp4yFmM6Dvdj/onu/oNbQVMuU730b54VxzqTibXcTLwVEUie
+6WT8NY7y7kWpyUPI5UsEgROuzQuonYu+3k76RVgEaiWwgyxxGEVvsQ6VgIJbVrnz
+kKWQ+7gGBUn4ZAPAuKC7H5cG0PSp5lmU6aVI3TMI6dObKGojXZcxpLpjTOgS4d/B
+g2pJp+D5haVq4Ek1mTpQjvSmffFEnYhCXArE1oK3xbNvbH1HJNDmJg8mFTe44H5D
+FABycBJr37TLPz9xeB9RK/FSjMmTPQmtdxiTXYpxAcxQRgHSfnLWrbooLlo9WazB
+xziakVDd6LJr3AU1x1s0eNARKFTXt62TAjdf/CjaQBA8ZPESUgrerb4P+eYHOp83
++O0Ksond1wEClfIo4mSdk1Q1sUSXokMoHOyk+qf9meWsjkxyObKdkEsLG4ceiaEh
+NgsbDVVx2NpkDTZylconY9ozoLhLe9nh3cmGXpgEcYQtoKF+Zj/c7pGKAYUpXqWm
+m+Wgm7xrrjU86hm7Oc1gCowIJr5aIg9jR4rZOoWWjSatuxdatb90i7xvuqHUa0up
+oceIM17b+OYBLE0yAIL0
+=YPnH
 -----END PGP SIGNATURE-----
