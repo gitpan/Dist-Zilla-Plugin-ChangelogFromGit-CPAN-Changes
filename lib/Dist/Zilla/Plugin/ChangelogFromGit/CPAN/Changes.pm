@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.13';
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.14_01'; # TRIAL
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.1;
@@ -71,7 +71,10 @@ has _git_can_mailmap => (
     lazy    => 1,
     isa     => 'Bool',
     default => sub {
-        return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
+        my ($gv) = $_[0]->git->version =~ /(\d+\.\d+\.\d+)/;
+        $gv //= 0;
+        say STDERR "# git version $gv";
+        return version->parse($gv) < '1.8.2' ? 0 : 1;
     },
 );
 
@@ -374,7 +377,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.13
+version 0.0.14_01
 
 =head1 SYNOPSIS
 
