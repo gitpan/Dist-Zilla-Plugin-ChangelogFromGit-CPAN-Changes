@@ -38,6 +38,7 @@
             "Dist::Zilla::Role::AfterBuild" : "0",
             "Dist::Zilla::Role::FileGatherer" : "0",
             "Dist::Zilla::Role::Git::Repo" : "0",
+            "Encode" : "0",
             "Git::Wrapper" : "0",
             "Moose" : "0",
             "Moose::Util::TypeConstraints" : "0",
@@ -70,7 +71,7 @@
          }
       }
    },
-   "release_status" : "testing",
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues"
@@ -82,14 +83,14 @@
          "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
       }
    },
-   "version" : "0.0.14_01",
+   "version" : "0.0.14",
    "x_BuiltWith" : {
       "failures" : {
          "CPAN::Changes::Release" : "Module::MetaData could not parse a version from /home/ioan/perl5/perlbrew/perls/perl-5.20.0/lib/site_perl/5.20.0/CPAN/Changes/Release.pm"
       },
       "modules" : {
          "Archive::Tar" : "1.96",
-         "CPAN::Changes" : "0.27",
+         "CPAN::Changes" : "0.28",
          "CPAN::Meta" : "2.141520",
          "CPAN::Meta::Requirements" : "2.125",
          "Class::Load" : "0.21",
@@ -98,7 +99,8 @@
          "Dist::Zilla::PluginBundle::Author::IOANR" : "0.004",
          "Dist::Zilla::Role::AfterBuild" : "5.019",
          "Dist::Zilla::Role::FileGatherer" : "5.019",
-         "Dist::Zilla::Role::Git::Repo" : "2.022",
+         "Dist::Zilla::Role::Git::Repo" : "2.023",
+         "Encode" : "2.62",
          "ExtUtils::MakeMaker" : "6.98",
          "File::Spec" : "3.47",
          "File::Spec::Functions" : "3.47",
@@ -106,12 +108,12 @@
          "Git::Wrapper" : "0.032",
          "IO::Handle" : "1.35",
          "IPC::Open3" : "1.16",
-         "List::Util" : "1.38",
+         "List::Util" : "1.39",
          "Module::Build::Tiny" : "0.036",
-         "Moose" : "2.1208",
-         "Moose::Util::TypeConstraints" : "2.1208",
+         "Moose" : "2.1209",
+         "Moose::Util::TypeConstraints" : "2.1209",
          "Proc::InvokeEditor" : "1.06",
-         "Test::CPAN::Changes" : "0.27",
+         "Test::CPAN::Changes" : "0.28",
          "Test::CheckDeps" : "0.010",
          "Test::DZil" : "5.019",
          "Test::More" : "1.001003",

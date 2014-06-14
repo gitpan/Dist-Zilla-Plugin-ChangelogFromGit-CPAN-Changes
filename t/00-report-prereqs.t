@@ -67,6 +67,7 @@ my $static_prereqs = do { my $x = {
                                       'Dist::Zilla::Role::AfterBuild' => '0',
                                       'Dist::Zilla::Role::FileGatherer' => '0',
                                       'Dist::Zilla::Role::Git::Repo' => '0',
+                                      'Encode' => '0',
                                       'Git::Wrapper' => '0',
                                       'Moose' => '0',
                                       'Moose::Util::TypeConstraints' => '0',

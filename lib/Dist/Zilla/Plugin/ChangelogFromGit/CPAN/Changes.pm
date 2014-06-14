@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.14_01'; # TRIAL
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.14';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.1;
@@ -9,6 +9,7 @@ use Class::Load 'try_load_class';
 use CPAN::Changes::Release;
 use CPAN::Changes;
 use DateTime;
+use Encode;
 use Git::Wrapper;
 
 with qw/
@@ -73,7 +74,6 @@ has _git_can_mailmap => (
     default => sub {
         my ($gv) = $_[0]->git->version =~ /(\d+\.\d+\.\d+)/;
         $gv //= 0;
-        say STDERR "# git version $gv";
         return version->parse($gv) < '1.8.2' ? 0 : 1;
     },
 );
@@ -334,11 +334,19 @@ sub _get_changes {
             next if $commit->{subject} =~ /^Release /;
             next if $commit->{subject} =~ /^Merge (pull|branch)/;
 
+            unless (utf8::is_utf8($commit->{subject})) {
+                $commit->{subject} = Encode::decode_utf8($commit->{subject});
+            }
+
             if ($self->show_author && exists $commit->{author}) {
                 my $author = $commit->{author};
 
                 if ($self->show_author_email) {
                     $author .= ' ' . $commit->{email};
+                }
+
+                unless (utf8::is_utf8($author)) {
+                    $author = Encode::decode_utf8($author);
                 }
 
                 if ($self->group_by_author) {
@@ -377,7 +385,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 =head1 VERSION
 
-version 0.0.14_01
+version 0.0.14
 
 =head1 SYNOPSIS
 
